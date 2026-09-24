@@ -1,0 +1,22 @@
+# Quarto 工程配置
+#
+# 只渲染 index.qmd 并输出为根目录 README.md；仓库不生成其他 HTML 产物。
+
+project:
+  type: default
+  render:
+    - index.qmd
+
+# 过滤器负责 GitHub 兼容性：把 Quarto 写入的 data-align 还原为 GitHub 认得的 align。
+filters:
+  - .agents/skills/maintaining-readme/scripts/filters/github-align.lua
+
+format:
+  gfm:
+    toc: false                     # Profile 页不需要目录
+    wrap: preserve
+    output-file: README.md
+    default-image-extension: ""    # 不给远程图片地址追加扩展名，避免 raw.githubusercontent 链接失效
+    # 用最小模板替换 Quarto 默认模板：默认模板在无 title/toc 时会向输出顶部
+    # 注入两个空行，最小模板只输出正文，保证 README.md 从 <picture> 直接开始。
+    template: _templates/readme.markdown

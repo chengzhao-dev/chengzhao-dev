@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "generated_by": ".agents/skills/governing-agents/scripts/registry.py build",
+  "entries": [
+    {
+      "type": "entrypoint",
+      "path": "AGENTS.md",
+      "name": "AGENTS",
+      "title": "AGENTS",
+      "summary": "硬性约束与执行原则，任务开始前必读",
+      "triggers": [
+        "硬约束",
+        "红线",
+        "构建命令",
+        "执行原则"
+      ],
+      "paths": [],
+      "lines": 39,
+      "references": [
+        ".agents/QUICK-REFERENCE.md",
+        ".agents/incidents/INDEX.md",
+        ".agents/knowledge/KNOWLEDGE.md",
+        ".agents/knowledge/repo-layout/publish-governance.md",
+        ".agents/memory/MEMORY.md",
+        "ARCHITECTURE.md",
+        "README.md",
+        "config.toml",
+        "index.qmd"
+      ]
+    },
+    {
+      "type": "entrypoint",
+      "path": "ARCHITECTURE.md",
+      "name": "ARCHITECTURE",
+      "title": "ARCHITECTURE",
+      "summary": "项目结构、目录职责与常用流程图",
+      "triggers": [
+        "结构",
+        "目录",
+        "流程图",
+        "新人入门"
+      ],
+      "paths": [],
+      "lines": 49,
+      "references": [
+        ".agents/README.md",
+        ".agents/knowledge/repo-layout/publish-governance.md",
+        ".agents/skills/designing-visuals/scripts/activity/add_labels.py",
+        ".agents/skills/designing-visuals/scripts/stats/gen_stats.py",
+        ".agents/skills/governing-agents/SKILL.md",
+        ".agents/skills/maintaining-readme/SKILL.md",
+        ".agents/skills/verifying/SKILL.md",
+        ".github/workflows/snake.yml",
+        "AGENTS.md",
+        "README.md",
+        "index.qmd"
+      ]
+    },
+    {
+      "type": "entrypoint",
+      "path": ".agents/README.md",
+      "name": "agents-workspace",
+      "title": "agents-workspace",
+      "summary": "agent 工作区三区职责与归类判断规则",
+      "triggers": [
+        "归类",
+        "放哪",
+        "工作区",
+        "技能规则"
+      ],
+      "paths": [],
+      "lines": 25,
+      "references": [
+        "AGENTS.md",
+        "ARCHITECTURE.md"
+      ]
+    },
+    {
+      "type": "skill",
+      "path": ".agents/skills/designing-visuals/SKILL.md",
+      "name": "designing-visuals",
+      "title": "designing-visuals",
+      "summary": "横幅、色板、Shields 组件与推荐项目列表样式的唯一标准",
+      "triggers": [
+        "横幅",
+        "色板",
+        "徽章",
+        "组件",
+        "视觉",
+        "推荐项目",
+        "picture"
+      ],
+      "paths": [
+        "content/**",
+        "assets/**",
+        "index.qmd",
+        ".agents/skills/designing-visuals/scripts/**"
+      ],
+      "lines": 86,
+      "references": [
+        "ARCHITECTURE.md",
+        "assets/banner/pixel-flower-landscape-64color.webp"
+      ],
+      "files": 7
+    },
+    {
+      "type": "skill",
+      "path": ".agents/skills/governing-agents/SKILL.md",
+      "name": "governing-agents",
+      "title": "governing-agents",
+      "summary": "agent 工作区治理：入口文档写法与篇幅预算、删合拆重构、目录命名、技能拆分合并与内容归类",
+      "triggers": [
+        "重构",
+        "精简",
+        "合并",
+        "拆分",
+        "命名",
+        "目录",
+        "归类",
+        "指针",
+        "AGENTS 文档",
+        "篇幅预算",
+        "技能"
+      ],
+      "paths": [
+        "AGENTS.md",
+        ".agents/**"
+      ],
+      "lines": 95,
+      "references": [
+        ".agents/QUICK-REFERENCE.md",
+        ".agents/README.md",
+        ".agents/incidents/INDEX.md",
+        ".agents/skills/verifying/scripts/verify/check_budgets.py",
+        "AGENTS.md",
+        "ARCHITECTURE.md"
+      ],
+      "files": 10
+    },
+    {
+      "type": "skill",
+      "path": ".agents/skills/maintaining-readme/SKILL.md",
+      "name": "maintaining-readme",
+      "title": "maintaining-readme",
+      "summary": "Quarto 渲染、预览、GitHub 兼容性校验与发布分支的维护入口",
+      "triggers": [
+        "quarto",
+        "render",
+        "预览",
+        "发布",
+        "output 分支",
+        "兼容性",
+        "兼容"
+      ],
+      "paths": [
+        "_quarto.yml",
+        "index.qmd",
+        ".github/workflows/**",
+        "scripts/**"
+      ],
+      "lines": 73,
+      "references": [
+        ".agents/knowledge/KNOWLEDGE.md",
+        ".agents/knowledge/component-trust/trust-tiers.md",
+        "README.md"
+      ],
+      "files": 4
+    },
+    {
+      "type": "skill",
+      "path": ".agents/skills/verifying/SKILL.md",
+      "name": "verifying",
+      "title": "verifying",
+      "summary": "Quarto 渲染与全套本地校验命令的统一入口",
+      "triggers": [
+        "构建",
+        "校验",
+        "渲染",
+        "verify",
+        "check",
+        "audit"
+      ],
+      "paths": [
+        "_quarto.yml",
+        "index.qmd",
+        "content/**",
+        ".agents/skills/**/scripts/**",
+        "assets/**"
+      ],
+      "lines": 52,
+      "references": [
+        ".agents/skills/designing-visuals/scripts/media/banner_spec.py",
+        ".github/workflows/readme.yml",
+        "README.md"
+      ],
+      "files": 8
+    },
+    {
+      "type": "skill",
+      "path": ".agents/skills/writing-chinese/SKILL.md",
+      "name": "writing-chinese",
+      "title": "writing-chinese",
+      "summary": "中文表达、代码命名与注释的唯一规范，注释格式语法在 references/comment-format.md",
+      "triggers": [
+        "中文",
+        "写作",
+        "措辞",
+        "标题",
+        "标点",
+        "命名",
+        "注释"
+      ],
+      "paths": [
+        "**/*.md",
+        "**/*.py",
+        "**/*.lua",
+        "**/*.toml",
+        "**/*.yml"
+      ],
+      "lines": 82,
+      "references": [
+        "AGENTS.md"
+      ],
+      "files": 3
+    },
+    {
+      "type": "skill",
+      "path": ".agents/skills/writing-readme/SKILL.md",
+      "name": "writing-readme",
+      "title": "writing-readme",
+      "summary": "Profile README 的文案、事实核验、章节结构与字数区间唯一标准",
+      "triggers": [
+        "README",
+        "文案",
+        "字数",
+        "章节",
+        "alt",
+        "事实核验"
+      ],
+      "paths": [
+        "content/**",
+        "index.qmd"
+      ],
+      "lines": 86,
+      "references": [
+        ".agents/knowledge/KNOWLEDGE.md",
+        ".agents/skills/designing-visuals/scripts/activity/add_labels.py",
+        "AGENTS.md",
+        "ARCHITECTURE.md"
+      ],
+      "files": 1
+    },
+    {
+      "type": "entrypoint",
+      "path": ".agents/knowledge/KNOWLEDGE.md",
+      "name": "knowledge",
+      "title": "知识库索引",
+      "summary": "知识库索引：事实与参数",
+      "triggers": [],
+      "paths": [],
+      "lines": 22,
+      "references": [
+        ".agents/knowledge/component-trust/trust-tiers.md",
+        ".agents/knowledge/local-env/python.md",
+        ".agents/knowledge/repo-layout/branches-workflows.md",
+        ".agents/knowledge/repo-layout/publish-governance.md",
+        ".agents/knowledge/repo-layout/source-artifacts.md",
+        ".agents/knowledge/visual-design/banner-media.md",
+        ".agents/knowledge/visual-design/bright-palette.md",
+        "AGENTS.md",
+        "config.toml"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/component-trust/trust-tiers.md",
+      "name": "trust-tiers",
+      "title": "组件信任层级",
+      "summary": "允许与禁止引用的外部资源清单及四级判定方法",
+      "triggers": [
+        "组件",
+        "信任",
+        "shields",
+        "统计卡",
+        "第三方",
+        "禁止"
+      ],
+      "paths": [],
+      "lines": 54,
+      "references": [
+        ".agents/skills/designing-visuals/scripts/stats/gen_stats.py",
+        ".github/workflows/snake.yml"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/local-env/python.md",
+      "name": "local-python",
+      "title": "本机 Python 解释器",
+      "summary": "本机 Python 解释器位置与统一用法，唯一事实源是 config.toml 的 python 字段",
+      "triggers": [
+        "python",
+        "解释器",
+        "miniforge",
+        "conda",
+        "环境",
+        "Store 占位",
+        "本机工具",
+        "shebang"
+      ],
+      "paths": [],
+      "lines": 38,
+      "references": [
+        "config.toml"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/repo-layout/branches-workflows.md",
+      "name": "branches-workflows",
+      "title": "分支与工作流事实",
+      "summary": "output 分支六个 SVG、工作流分工与 .gitignore 必须保持的忽略清单",
+      "triggers": [
+        "output 分支",
+        "snake.yml",
+        "readme.yml",
+        "svg",
+        "gitignore",
+        "工作流",
+        "生成顺序"
+      ],
+      "paths": [],
+      "lines": 43,
+      "references": [
+        ".agents/skills/designing-visuals/scripts/activity/add_labels.py",
+        ".agents/skills/designing-visuals/scripts/stats/gen_stats.py",
+        ".github/workflows/readme.yml",
+        ".github/workflows/snake.yml",
+        "README.md",
+        "config.toml"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/repo-layout/publish-governance.md",
+      "name": "publish-governance",
+      "title": "GitHub 发布面治理",
+      "summary": "公开内容的来源、生成物、隐私与静态校验边界",
+      "triggers": [
+        "GitHub",
+        "发布面",
+        "隐私扫描",
+        "生成物",
+        "静态链接",
+        "唯一事实源"
+      ],
+      "paths": [],
+      "lines": 40,
+      "references": [
+        ".agents/QUICK-REFERENCE.md",
+        ".agents/registry.json",
+        "AGENTS.md",
+        "README.md",
+        "index.qmd"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/repo-layout/source-artifacts.md",
+      "name": "source-artifacts",
+      "title": "源文件、产物与本机工具",
+      "summary": "仓库目录职责、Quarto 配置事实与 FFmpeg/FFprobe 五级解析顺序",
+      "triggers": [
+        "源文件",
+        "产物",
+        "toolchain",
+        "ffmpeg",
+        "config.toml",
+        "_quarto.yml",
+        "目录职责"
+      ],
+      "paths": [],
+      "lines": 43,
+      "references": [
+        ".agents/skills/designing-visuals/scripts/media/bootstrap_media.py",
+        ".agents/skills/designing-visuals/scripts/media/gen_banner.py",
+        ".agents/skills/designing-visuals/scripts/media/toolchain.py",
+        ".agents/skills/maintaining-readme/scripts/filters/github-align.lua",
+        "README.md",
+        "_quarto.yml",
+        "config.toml",
+        "index.qmd"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/visual-design/banner-media.md",
+      "name": "banner-media",
+      "title": "横幅媒体参数",
+      "summary": "横幅 WebP/静态降级的素材规格、编码参数、体积上限与重新生成入口",
+      "triggers": [
+        "横幅",
+        "banner",
+        "webp",
+        "ffmpeg",
+        "64color",
+        "体积上限"
+      ],
+      "paths": [],
+      "lines": 75,
+      "references": [
+        ".agents/skills/designing-visuals/scripts/media/bootstrap_media.py",
+        ".agents/skills/designing-visuals/scripts/media/gen_banner.py",
+        ".github/workflows/readme.yml",
+        "assets/banner/pixel-flower-landscape-64color.png",
+        "assets/banner/pixel-flower-landscape-64color.webp",
+        "config.toml"
+      ]
+    },
+    {
+      "type": "knowledge",
+      "path": ".agents/knowledge/visual-design/bright-palette.md",
+      "name": "bright-palette",
+      "title": "明亮花丛色板",
+      "summary": "浅色/深色主题色板 token 与 Shields 参数示例",
+      "triggers": [
+        "色板",
+        "色值",
+        "token",
+        "配色",
+        "shields"
+      ],
+      "paths": [],
+      "lines": 93,
+      "references": [
+        ".agents/skills/designing-visuals/scripts/activity/add_labels.py",
+        ".agents/skills/designing-visuals/scripts/stats/gen_stats.py",
+        "assets/banner/pixel-flower-landscape-64color.png"
+      ]
+    },
+    {
+      "type": "entrypoint",
+      "path": ".agents/memory/MEMORY.md",
+      "name": "memory",
+      "title": "记忆索引",
+      "summary": "记忆索引：跨会话经验",
+      "triggers": [],
+      "paths": [],
+      "lines": 20,
+      "references": [
+        ".agents/memory/domains/agent-workspace/index.md",
+        ".agents/memory/domains/media-build/index.md",
+        ".agents/memory/domains/quarto-render/index.md"
+      ]
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/agent-workspace/cursor-attribution.md",
+      "name": "cursor-attribution",
+      "title": "Cursor 提交归属污染 GitHub Contributors",
+      "summary": "Cursor 自动注入的共著 trailer 会让 cursoragent 出现在 Contributors，去除与预防方法",
+      "triggers": [
+        "Cursor",
+        "cursoragent",
+        "Contributors",
+        "Co-authored-by",
+        "attribution",
+        "共著",
+        "提交信息",
+        "归属"
+      ],
+      "paths": [],
+      "lines": 32,
+      "references": [
+        ".agents/skills/verifying/scripts/verify/check_commit_attribution.py"
+      ]
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/agent-workspace/incidents-design.md",
+      "name": "incidents-design",
+      "title": "incidents 事故案例库的设计决策",
+      "summary": "incidents 与 memory 的边界、平时不可见的豁免机制、检索方案选型理由",
+      "triggers": [
+        "incidents",
+        "事故",
+        "案例库",
+        "错误案例",
+        "检索方案",
+        "索引"
+      ],
+      "paths": [],
+      "lines": 33,
+      "references": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/agent-workspace/plan-doc-location.md",
+      "name": "plan-doc-location",
+      "title": "计划与审计文档的存放位置",
+      "summary": "计划/审计文档放 .agents/plan/，根目录白名单由 check_naming.py 拦截",
+      "triggers": [
+        "计划文档",
+        "审计报告",
+        "根目录",
+        "temp",
+        "白名单"
+      ],
+      "paths": [],
+      "lines": 27,
+      "references": []
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/agent-workspace/progressive-nav.md",
+      "name": "progressive-nav",
+      "title": "文档信息架构决策",
+      "summary": "人类阅读优先、Agent 路由其次的文档重构选择与边界",
+      "triggers": [
+        "渐进式导航",
+        "双入口",
+        "文档重构",
+        "平衡清理",
+        "信息架构"
+      ],
+      "paths": [],
+      "lines": 32,
+      "references": [
+        ".agents/README.md",
+        "AGENTS.md",
+        "ARCHITECTURE.md"
+      ]
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/agent-workspace/registry-benchmark.md",
+      "name": "registry-benchmark",
+      "title": "注册表检索效果评测与位置决策",
+      "summary": "检索效果评测结论（token/命中/耗时）与生成物保持 .agents/ 根的决策记录",
+      "triggers": [
+        "注册表",
+        "registry",
+        "检索效果",
+        "benchmark",
+        "token",
+        "命中率",
+        "lookup",
+        "生成物位置"
+      ],
+      "paths": [],
+      "lines": 35,
+      "references": [
+        ".agents/skills/governing-agents/scripts/registry_bench.py"
+      ]
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/quarto-render/stale-project-cache.md",
+      "name": "stale-project-cache",
+      "title": "项目缓存过期导致渲染结果错误",
+      "summary": "渲染无报错但产物过期的根因与清缓存处理步骤",
+      "triggers": [
+        "缓存",
+        "project-cache",
+        "deno-kv",
+        "渲染错误",
+        "过滤器未生效"
+      ],
+      "paths": [],
+      "lines": 36,
+      "references": [
+        "_quarto.yml"
+      ]
+    },
+    {
+      "type": "memory",
+      "path": ".agents/memory/domains/quarto-render/verify-approach.md",
+      "name": "verify-approach",
+      "title": "验收方式决策记录",
+      "summary": "验收以静态校验为准（无截图）的决策由来，现行清单见技能",
+      "triggers": [
+        "验收",
+        "截图",
+        "静态校验",
+        "幂等",
+        "决策"
+      ],
+      "paths": [],
+      "lines": 31,
+      "references": [
+        ".agents/skills/verifying/scripts/verify/check_budgets.py",
+        ".agents/skills/verifying/scripts/verify/check_naming.py"
+      ]
+    }
+  ]
+}

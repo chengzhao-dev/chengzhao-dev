@@ -1,0 +1,14 @@
+# 统一文本文件换行符为 LF。
+# Quarto 在 Windows 上按平台默认写出 CRLF，如果仓库里存的是 CRLF，
+# GitHub Actions 在 Linux 上重新渲染后会得到 LF，生成一致性校验就会误报。
+* text=auto eol=lf
+
+# 明确二进制文件，避免被换行符转换破坏
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary

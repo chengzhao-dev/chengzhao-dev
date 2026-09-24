@@ -1,0 +1,78 @@
+# 忽略规则
+#
+# 只忽略非项目文件；受控源文件（content/、assets/、.agents/、.github/ 等）一律不忽略。
+# 按类别分组维护：新增条目时归入对应小类，不新开类别。
+
+# ── 系统临时文件 ──────────────────────────────────────────────
+
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── 编辑器与 IDE ─────────────────────────────────────────────
+
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Agent 与 AI 工具的本地产物 ───────────────────────────────
+
+# CodeBuddy 会话数据，仅本机使用
+.codebuddy/
+
+# ZCode 本地配置与产物，仅在本机使用
+.zcodeignore
+.zcode/
+
+# ── 临时目录 ─────────────────────────────────────────────────
+
+# Agent 暂存文件统一放根目录 temp/
+/temp/
+.tmp/
+tmp/
+
+# ── Quarto 预览、缓存与构建产物 ─────────────────────────────
+
+/.quarto/
+.quarto-cache/
+_freeze/
+_site/
+README.html
+README_files/
+index.html
+index_files/
+**/*.quarto_ipynb
+
+# ── 通用构建输出 ─────────────────────────────────────────────
+
+build/
+dist/
+out/
+
+# ── 语言与工具链缓存 ─────────────────────────────────────────
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.npm/
+.yarn/
+
+# ── 本地环境与密钥 ───────────────────────────────────────────
+
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ── 工具缓存 ─────────────────────────────────────────────────
+
+# 媒体工具缓存：bootstrap 脚本下载的 FFmpeg/FFprobe，仅本机使用
+.agents/skills/designing-visuals/scripts/media/tool-cache/
+
+# ── 日志与测试输出 ───────────────────────────────────────────
+
+*.log
+coverage/

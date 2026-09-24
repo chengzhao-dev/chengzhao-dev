@@ -1,0 +1,11 @@
+{{< include content/header.md >}}
+
+{{< include content/tech-stack.md >}}
+
+{{< include content/repositories.md >}}
+
+{{< include content/activity.md >}}
+
+{{< include content/stats.md >}}
+
+{{< include content/contact.md >}}
